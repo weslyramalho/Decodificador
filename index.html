@@ -7,12 +7,18 @@
     <title>Encritar</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navegacao">
+            <img src="./assets/a.svg" alt="alura" >
+        </nav>
+    </header>
     <main class="conteudo">
         <section class="conteudo__sessao">
             <input class="conteudo__sessao_input" type="text" placeholder="Digite aqui o seu texto">
-            <a>Criptografar</a>
-            <a>Descriptografar</a>
+            <div class="conteudo__sessao__link">
+                <a onclick="" class="conteudo__sessao__link__encripta">Criptografar</a>
+                <a onclick="" class="conteudo__sessao__link__deccripta">Descriptografar</a>
+            </div>
         </section>
         <section class="conteudo__resposta">
             <img src="./assets/lupa.svg" alt="lupa">
@@ -21,6 +27,7 @@
         </section>
     </main>
     <footer>
+        <p>Desenvolvido por Wesly Ramalho</p>
     </footer>
 
     <script src="app.js" defer></script>
