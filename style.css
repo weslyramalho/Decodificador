@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #0A3871;
+
+
+
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+.conteudo__sessao{
+    margin: 2%;
+    display: flex;
+}
+.conteudo__sessao_input {
+    width: 680px;
+    height: 48px;
+    color: var(--cor-terciaria);
+}
+
+.conteudo__resposta {
+    background-color: var(--cor-secundaria);
+    width: 400px;
+    height: 944px;
+    align-items: center;
+    gap: 2px;
+}
