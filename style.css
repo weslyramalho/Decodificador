@@ -151,3 +151,35 @@ body {
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
 }
+
+@media (max-width: 1028px){
+    .conteudo {
+        padding: 5%;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .conteudo__resposta {
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+    .conteudo__resposta__imagem {
+        width: 0%;
+    }
+    .conteudo__resposta__texto {
+        justify-content: center;
+    }
+}
+@media (max-width: 700px){
+    .conteudo {
+      margin-left: 5px;
+    }
+    .conteudo__sessao__link{
+        flex-direction: column;
+    }
+    .conteudo__sessao_input {
+        display: flex;
+        width: 90%;
+        height: 30%;
+    }
+}
