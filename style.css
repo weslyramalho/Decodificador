@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,9 @@
     --cor-secundaria: #FFFFFF;
     --cor-terciaria: #0A3871;
     --cor-quartiaria: #D8DFE8;
+    --cor-quintiaria:#495057;
+
+    --fonte-primaria: 'Inter', sans-serif;
 
 
 
@@ -31,6 +35,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+.conteudo__sessao__aviso {
+    display: flex;
+    gap: 16px;
+  
+
+}
+.conteudo__sessao__aviso__imagem {
+    height: 16px;
+    width: 16px;
+}
+.conteudo__sessao__aviso__texto{
+    color: var(--cor-quintiaria);
+    font-size: 12px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
 .conteudo__sessao__link{
     display: flex;
     flex-direction: row;
@@ -40,7 +60,7 @@ body {
 
 }
 .conteudo__sessao__link__deccripta{
-    margin-top: 600px;
+    margin-top: 10px;
     background-color: var(--cor-quartiaria);
     color: var(--cor-terciaria);
     width: 328px;
@@ -53,10 +73,12 @@ body {
     text-decoration: none;
     font-size: 16px;
     gap: 16px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
 
 }
 .conteudo__sessao__link__encripta{
-    margin-top: 600px;
+    margin-top: 10px;
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
     width: 328px;
@@ -69,29 +91,63 @@ body {
     text-decoration: none;
     font-size: 16px;
     gap: 24px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
 }
 .conteudo__sessao_input {
     background-color: var(--cor-primaria);
+    display: flexbox;
     width: 680px;
-    height: 48px;
     color: var(--cor-terciaria);
     font-size: 32px;
     border: none;
 }
 .conteudo__sessao_input::placeholder {
     color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
 }
 
 .conteudo__resposta {
     background-color: var(--cor-secundaria);
     width: 400px;
-    height: 800px;
+    height: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 32px;
     border-radius: 32px;
     justify-content: center;
-    gap: 2px;
-    margin-top: 0px;
+    gap: 16px;
+    
+}
+.conteudo__resposta__imagem{
+    width: 80%;
+
+}
+.conteudo__resposta__mensagen {
+    width: 80%;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+ 
+}
+.conteudo__resposta__texto {
+    width: 80%;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.rodape {
+    margin-top: 32px;
+    background-color: var(--cor-terciaria);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rodape__dev {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
 }
