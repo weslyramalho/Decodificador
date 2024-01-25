@@ -9,6 +9,7 @@
     --cor-terciaria: #0A3871;
     --cor-quartiaria: #D8DFE8;
     --cor-quintiaria:#495057;
+    --cor-sextaria: #00000000;
 
     --fonte-primaria: 'Inter', sans-serif;
 
@@ -57,6 +58,29 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+
+}
+.conteudo__sessao__link__copiar:disabled {
+    background: #cccccc00;
+    color: #00000000;
+
+}
+.conteudo__sessao__link__copiar {
+    margin-top: 10px;
+    background-color: var(--cor-sextaria);
+    color: var(--cor-terciaria);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    gap: 16px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
 
 }
 .conteudo__sessao__link__deccripta{

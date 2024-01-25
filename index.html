@@ -20,14 +20,15 @@
             <p class="conteudo__sessao__aviso__texto">Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="conteudo__sessao__link">
-                <a onclick="" class="conteudo__sessao__link__encripta">Criptografar</a>
-                <a onclick="" class="conteudo__sessao__link__deccripta">Descriptografar</a>
+                <button onclick="criptografar()" class="conteudo__sessao__link__encripta">Criptografar</button>
+                <button onclick="descriptografar()" class="conteudo__sessao__link__deccripta">Descriptografar</button>
             </div>
         </section>
         <section class="conteudo__resposta">
-            <img class="conteudo__resposta__imagem" src="./assets/lupa.svg" alt="lupa">
-            <h2 class="conteudo__resposta__mensagen">Nenhuma mensagem encontrada</h2>
-            <p class="conteudo__resposta__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <img id="imagenresp" class="conteudo__resposta__imagem" src="./assets/lupa.svg" alt="lupa">
+            <h2 id="textoMensag" class="conteudo__resposta__mensagen">Nenhuma mensagem encontrada</h2>
+            <p id="textotraduzi" class="conteudo__resposta__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button id="copiar" onclick="copiar()" class="conteudo__sessao__link__copiar"  disabled>Copiar</button>
         </section>
     </main>
     <footer class="rodape">
